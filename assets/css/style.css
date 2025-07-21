@@ -29,13 +29,12 @@
   color: #fff;
   text-align: center;
   letter-spacing: 1px;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (min-width: 550px) {
   .header .site-title {
     margin: 0;
-    font-size: 100px;
+    font-size: 85px;
   }
 }
 
@@ -51,7 +50,7 @@
 
 @media only screen and (min-width: 550px) {
   .header .site-description {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -124,14 +123,9 @@
 }
 
 #particles-js {
-  background: #1488cc;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2b32b2, #1488cc);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(135deg, #2c3e50, #000000, #4b0082); */
+  background: #1f2224;
   display: flex;
-  vertical-align: bottom;
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -178,9 +172,19 @@ nav {
   width: 100%;
   padding: 20px 0;
   z-index: 998;
-  transition: all 0.3s ease;
   font-family: "Ubuntu", sans-serif;
+  background-color: rgba(
+    31,
+    34,
+    36,
+    0.95
+  ); /* match #1f2224 with slight transparency */
+  color: #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* subtle shadow for separation */
+  backdrop-filter: blur(4px); /* elegant glass-like effect */
+  transition: all 0.3s ease;
 }
+
 nav.sticky {
   background: #4070f4;
   padding: 13px 0;
@@ -194,8 +198,8 @@ nav .navbar {
 }
 nav .navbar .logo a {
   font-weight: 500;
-  font-size: 35px;
-  color: #4070f4;
+  font-size: 20px;
+  color: #fbfafa;
 }
 nav.sticky .navbar .logo a {
   color: #fff;
@@ -211,7 +215,7 @@ nav .navbar .menu li {
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
-  color: #0e2431;
+  color: #fbfafa;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
@@ -252,4 +256,146 @@ nav.sticky .menu-btn {
 }
 .navbar .menu .menu-btn {
   color: #fff;
+}
+
+/* About Section Styling */
+.title span {
+  font-family: "Poppins", sans-serif; /* or use a more elegant font like 'Playfair Display' */
+  font-size: 36px;
+  font-weight: 700;
+  color: #4070f4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+.title span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #4070f4;
+}
+
+.about .content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-details .left img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-details .right {
+  flex: 1;
+}
+
+.about .topic {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4070f4;
+}
+
+.about-section .intro {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #444;
+  letter-spacing: 0.3px; /* Reduced from too much */
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.box {
+  background: #f7f9fc;
+  border-left: 4px solid #4070f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.box .icon {
+  font-size: 22px;
+  color: #4070f4;
+  margin-top: 3px;
+}
+
+.box span {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+.row-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.row-box .icon {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.row-box .text p {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .box-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: calc(50% - 10px);
+  }
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+section .button button {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Rounded pill shape */
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #4070f4, #6a8eff);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+section .button button:hover {
+  transform: scale(1.05);
+  background: #fff;
+  color: #4070f4;
+  border: 2px solid #4070f4;
 }
