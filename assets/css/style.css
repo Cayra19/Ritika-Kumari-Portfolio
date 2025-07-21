@@ -1,0 +1,219 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.header {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header .site-title {
+  font-size: 35px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+}
+
+@media only screen and (min-width: 550px) {
+  .header .site-title {
+    margin: 0;
+    font-size: 100px;
+  }
+}
+
+.header .site-description {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 550px) {
+  .header .site-description {
+    font-size: 40px;
+  }
+}
+
+.header-links {
+  justify-content: center;
+}
+
+.header-links .link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 550px) {
+  .header-links .link {
+    font-size: 20px;
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.down,
+.header-icons .icon {
+  color: #fff;
+  text-align: center;
+}
+.header-icons .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #fff;
+  margin: 8px;
+  transition: all 0.3s ease;
+  padding: 0; /* make sure there's no extra padding */
+  box-sizing: border-box; /* ensures borders don’t add extra space */
+}
+
+.header-icons .icon:active,
+.header-icons .icon:hover {
+  color: #1488cc;
+  background: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .header-icons .icon {
+    height: 40px;
+    width: 40px;
+    font-size: 28px;
+  }
+}
+
+.down {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.down-arrow:hover {
+  color: #2c3e50;
+}
+
+.down-arrow {
+  font-size: 30px;
+  animation: downBlink 1.5s infinite ease-in-out;
+}
+
+@keyframes downBlink {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateY(10px); /* move down 10px */
+  }
+}
+
+/* navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0e2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover {
+  color: #4070f4;
+}
+nav.sticky .menu a {
+  color: #fff;
+}
+nav.sticky .menu a:hover {
+  color: #0e2431;
+}
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a {
+  color: #fff;
+}
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn {
+  color: #4070f4;
+}
+nav.sticky .menu-btn {
+  color: #fff;
+}
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
