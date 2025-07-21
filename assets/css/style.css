@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -24,13 +24,12 @@
 }
 
 .header .site-title {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 60px;
   color: #fff;
   text-align: center;
   letter-spacing: 1px;
-  text-shadow:
-    3px 3px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (min-width: 550px) {
@@ -43,7 +42,7 @@
 .header .site-description {
   font-size: 20px;
   display: block;
-  line-height: 1.4;  
+  line-height: 1.4;
   color: #fff;
   margin-top: 10px;
   font-weight: 400;
@@ -60,7 +59,7 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .header-links .link {
@@ -74,7 +73,7 @@
 }
 
 .header-links .link:hover {
-  color: #aad4ff;                 
+  color: #aad4ff;
 }
 
 @media only screen and (min-width: 550px) {
@@ -125,24 +124,24 @@
 }
 
 #particles-js {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    display: flex;
-    vertical-align: bottom;
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed
+  background: #1488cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #particles-js .particles-js-canvas-el {
-    width: 100% !important;
-    height: 100vh !important
+  width: 100% !important;
+  height: 100vh !important;
 }
 
 .down {
@@ -254,4 +253,3 @@ nav.sticky .menu-btn {
 .navbar .menu .menu-btn {
   color: #fff;
 }
-
